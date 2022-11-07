@@ -11,6 +11,8 @@ const Friend = (props) => {
     // or nicher ta dibo
     navigate("/friend/" + id);
   };
+
+  //niche link line connect korbe friendDetails k
   return (
     <div>
       <h2>Name:{name} </h2>
