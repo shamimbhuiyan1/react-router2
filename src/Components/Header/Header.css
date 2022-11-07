@@ -1,0 +1,7 @@
+.header> :link{
+    padding: 10px;
+    background-color: greenyellow;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+}

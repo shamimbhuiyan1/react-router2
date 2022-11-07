@@ -19,12 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/friends" element={<Friends></Friends>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+
+        {/* Nested routing  */}
         <Route
           path="/friend/:friendId"
           element={<FriendDetail></FriendDetail>}
         ></Route>
-
-        {/* Nested routing  */}
 
         <Route path="/post" element={<Post></Post>}>
           <Route path=":postId" element={<PostDetail></PostDetail>}></Route>
@@ -34,7 +35,6 @@ function App() {
           path="/country/:countryName"
           element={<CountryDetail></CountryDetail>}
         ></Route>
-        <Route path="/about" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
